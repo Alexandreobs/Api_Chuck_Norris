@@ -16,9 +16,7 @@ public class RetroFifService {
 
     private static final String BASE_URL = "https://api.chucknorris.io/jokes/";
     private static Retrofit retrofit;
-
     private static Retrofit getRetrofit() {
-
 
         if (retrofit == null) {
 
@@ -41,7 +39,6 @@ public class RetroFifService {
                     .client(httpClient.build())
                     .build();
         }
-
         return retrofit;
     }
 

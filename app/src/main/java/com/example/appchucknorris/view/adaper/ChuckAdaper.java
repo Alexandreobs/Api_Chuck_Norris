@@ -5,15 +5,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.appchucknorris.R;
 import com.example.appchucknorris.view.activity.DetalheActivity;
-
 import java.util.List;
-
 
 public class ChuckAdaper extends RecyclerView.Adapter<ChuckAdaper.ViewHolder> {
 
@@ -66,15 +62,12 @@ public class ChuckAdaper extends RecyclerView.Adapter<ChuckAdaper.ViewHolder> {
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
-
             categoria = itemView.findViewById(R.id.textView_item_recycler);
 
         }
 
         public void onBind(String result) {
-
             categoria.setText(result);
-
         }
     }
 }

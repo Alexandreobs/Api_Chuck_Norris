@@ -11,7 +11,6 @@ import com.example.appchucknorris.view.adaper.ChuckAdaper.KEYY
 import com.example.appchucknorris.viewmodel.ChuckViewModelPiadas
 import kotlinx.android.synthetic.main.activity_detalhe.*
 
-
 class DetalheActivity : AppCompatActivity() {
 
     lateinit var chuckViewModelPiadas: ChuckViewModelPiadas
@@ -24,7 +23,6 @@ class DetalheActivity : AppCompatActivity() {
         getPiadaRandom()
         randomPiadas()
         loading()
-
     }
 
     private fun loading() {
@@ -52,7 +50,6 @@ class DetalheActivity : AppCompatActivity() {
         chuckViewModelPiadas.getAllPiada(recebidos)
         chuckViewModelPiadas.piadaLiveData.observe(this, Observer {
             textPiadas.text = it
-
         })
     }
 }

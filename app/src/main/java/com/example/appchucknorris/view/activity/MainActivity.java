@@ -3,18 +3,15 @@ package com.example.appchucknorris.view.activity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ProgressBar;
-
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProviders;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
 import com.example.appchucknorris.R;
 import com.example.appchucknorris.factorys.ViewModelFactory;
 import com.example.appchucknorris.view.adaper.ChuckAdaper;
 import com.example.appchucknorris.viewmodel.ChuckViewModel;
-
 import java.util.ArrayList;
 import java.util.List;
 
@@ -72,6 +69,5 @@ public class MainActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_pricipal);
         progressBar = findViewById(R.id.progress_bar);
         adaper = new ChuckAdaper(resultList);
-
     }
 }
